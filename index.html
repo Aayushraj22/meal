@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal</title>
+    <link rel="stylesheet" href="../styles/index.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>Input your delicious Meal Name</h1>
+      <div>
+        <input
+          type="search"
+          name="searchMeal"
+          id="searchMeal"
+          placeholder="mealname"
+          oninput="fetchResult()"
+        />
+      </div>
+    </nav>
+    <header>
+      <span onclick="toggleFavModal()" class="customBtn">My Favourite</span>
+    </header>
+
+    
+    <section id="modal">
+        <nav>
+          <h1>Your Favourite Meals</h1>
+          <span onclick="toggleFavModal()" class="customBtn">Close</span>
+        </nav>
+        <ul id="favouriteMeals">
+            
+        </ul>
+    </section>
+    <section id="mealResults">
+
+    </section>
+
+    <script src="../javascript/index.js"></script>
+  </body>
+</html>
